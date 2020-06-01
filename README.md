@@ -5,7 +5,7 @@ Another `iFrame` module for MagicMirror with timed refresh intervals.  Based on 
 Run these commands at the root of your magic mirror install.
 
 ```shell
-cd modules
+cd ~/MagicMirror/modules
 git clone https://github.com/ZalophusDokdo/MMM-iFrameReload.git
 ```
 
