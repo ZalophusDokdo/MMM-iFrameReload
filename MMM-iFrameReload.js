@@ -15,7 +15,8 @@ Module.register("MMM-iFrameReload",{
 		height:"800px",
 		width:"400%",
 		refreshInterval: 3600,
-		animationSpeed: 1000
+		animationSpeed: 1000,
+		scrolling: "no"
 	},
 
 	// Define start sequence.
@@ -30,6 +31,7 @@ Module.register("MMM-iFrameReload",{
 		iframe.width = this.config.width;
 		iframe.height = this.config.height;
 		iframe.src =  this.config.url;
+		iframe.scrolling = this.config.scrolling;
 		return iframe;
 	},
 	scheduleUpdate: function(delay) {
