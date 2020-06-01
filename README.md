@@ -1,4 +1,4 @@
-# Module: iFrameReload
+# Module: MMM-iFrameReload
 Another `iFrame` module for MagicMirror with timed refresh intervals.  Based on the [Desert Blade](https://github.com/desertblade/iFrame) MMM-iFrame.  Adds an iFrame that perodically refreshes its content to your [MagicMirror](https://github.com/MichMich/MagicMirror).
 
 ## Installation
@@ -6,7 +6,14 @@ Run these commands at the root of your magic mirror install.
 
 ```shell
 cd modules
-git clone https://github.com/TheBogueRat/MMM-iFrameReload
+git clone https://github.com/ZalophusDokdo/MMM-iFrameReload.git
+```
+
+## Update
+
+```shell
+cd ~/MagicMirror/modules/MMM-iFrameReload
+git pull
 ```
 
 ## Using the module
@@ -14,7 +21,7 @@ To use this module, add it to the modules array in the `config/config.js` file:
 ``` javascript
 modules: [
 	{
-		module: 'iFrameReload',
+		module: 'MMM-iFrameReload',
 		position: 'bottom_bar',	// This can be any of the regions.
 		config: {
 			// See 'Configuration options' for more information.
@@ -22,6 +29,7 @@ modules: [
 				width: "100%", // Optional. Default: 400px
 				height: "300px", // Optional. Default: 800px
         			refreshInterval: 3600  //Optional. Default: 3600 = 1 hour
+				scrolling: "no" 
 			}
 		}
 	}
